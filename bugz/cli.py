@@ -1,5 +1,7 @@
 #!/usr/bin/env python
 
+# vim: noet
+
 import commands
 import locale
 import os
@@ -221,6 +223,7 @@ class PrettyBugz(Bugz):
 		# directly from the tag, and just ignore if we don't
 		# see the tag.
 		FIELDS = (
+			('bug_id', 'ID'),
 			('short_desc', 'Title'),
 			('assigned_to', 'Assignee'),
 			('creation_ts', 'Reported'),
